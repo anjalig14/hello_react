@@ -21,7 +21,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React with Anjali and MSU
+          Learn React with Anjali
         </a>
       </header>
       <MagicButton/>
