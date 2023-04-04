@@ -23,7 +23,7 @@ function Library() {
           <td>{b.isbn}</td>
         </tr>
       )
-    };
+    }
     </table>
   )
 }
