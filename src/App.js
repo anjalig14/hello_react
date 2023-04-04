@@ -1,4 +1,6 @@
 // import logo from './logo.svg';
+import { useState } from 'react';
+import { supabase } from './supabaseClient'; 
 import './App.css';
 
 const magazines = [
@@ -53,10 +55,14 @@ function Bookshelf() {
 }
 
 function MagicButton() {
+  const [count,setCount] = useState(0);
+  function doMagic () {
+    setCount(count + 1)
+  }
   return (
     <div>
       <h3>This is a magic button</h3>
-      <button>Magic</button>
+      <button onClick={doMagic}>Magic {count}</button>
     </div>
   )
 }
