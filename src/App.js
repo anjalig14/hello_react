@@ -21,10 +21,10 @@ function Library() {
           <td>{b.author}</td>
           <td>{b.isbn}</td>
         </tr>
-      }}
+      })
     }
     </table>
-  );
+  )
 }
 
 const magazines = [
