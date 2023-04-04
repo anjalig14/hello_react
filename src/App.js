@@ -9,7 +9,7 @@ function Library() {
     let { data: books, error } = await supabase
       .from('books')
       .select('*')
-    setMyBooks(books);
+      setMyBooks(books);
   }
   getBooks();
   return (
@@ -95,7 +95,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Library/>
+        <Library />
         <ZineRack/>
         <Bookshelf/>
         <MagicButton/>
