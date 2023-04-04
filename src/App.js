@@ -9,18 +9,20 @@ function Library() {
     let { data: books, error } = await supabase
       .from('books')
       .select('*')
-      setMyBooks(books);
+    setMyBooks(books);
   }
 
   getBooks();
   return (
     <table>
     {
+      myBooks.map(b => (
         <tr>
-          <td>{books.title}</td>
-          <td>{books.author}</td>
-          <td>{books.isbn}</td>
+          <td>{b.title}</td>
+          <td>{b.author}</td>
+          <td>{b.isbn}</td>
         </tr>
+      ))
     }
     </table>
   )
